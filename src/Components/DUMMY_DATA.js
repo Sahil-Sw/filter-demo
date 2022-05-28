@@ -18,8 +18,8 @@ export const DUMMY_DATA = [
   {
     product: "C 22",
     brand: "casio",
-    type: "analog",
-    straps: "leather",
+    type: "digital",
+    straps: "metal",
     gender: "female",
     price: 1299,
   },

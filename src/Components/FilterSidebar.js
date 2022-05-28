@@ -27,25 +27,21 @@ const FilterComponent = styled.div`
 
 const FilterSidebar = (props) => {
   const onBrandChange = (e) => {
-    console.log(e.target.value);
     props.setFilterProduct((prev) => {
       return { ...prev, brand: e.target.value };
     });
   };
   const onTypeChange = (e) => {
-    console.log(e.target.value);
     props.setFilterProduct((prev) => {
       return { ...prev, type: e.target.value };
     });
   };
   const onStrapsChange = (e) => {
-    console.log(e.target.value);
     props.setFilterProduct((prev) => {
       return { ...prev, straps: e.target.value };
     });
   };
   const onGenderChange = (e) => {
-    console.log(e.target.value);
     props.setFilterProduct((prev) => {
       return { ...prev, gender: e.target.value };
     });

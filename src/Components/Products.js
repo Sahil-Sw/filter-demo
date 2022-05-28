@@ -55,6 +55,7 @@ const Products = () => {
     if (product.brand === filterProduct.brand) {
       return product;
     }
+    return false;
   })
     .filter((product) => {
       if (filterProduct.type === "all") return product;
@@ -62,6 +63,7 @@ const Products = () => {
       if (product.type === filterProduct.type) {
         return product;
       }
+      return false;
     })
     .filter((product) => {
       if (filterProduct.gender === "all") return product;
@@ -69,6 +71,7 @@ const Products = () => {
       if (product.gender === filterProduct.gender) {
         return product;
       }
+      return false;
     })
     .filter((product) => {
       if (filterProduct.straps === "all") return product;
@@ -76,6 +79,7 @@ const Products = () => {
       if (product.straps === filterProduct.straps) {
         return product;
       }
+      return false;
     })
     .sort((a, b) => {
       if (filterProduct.sortByPrice === "asc") {
@@ -87,7 +91,6 @@ const Products = () => {
       }
     })
     .map((product, i, arr) => {
-      console.log(arr);
       return <SingleProduct key={i} product={product}></SingleProduct>;
     });
 
