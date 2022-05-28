@@ -91,8 +91,6 @@ const Products = () => {
       return <SingleProduct key={i} product={product}></SingleProduct>;
     });
 
-  //   console.log(filteredProducts);
-
   return (
     <div>
       <Card>
