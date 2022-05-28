@@ -29,6 +29,11 @@ const ProductContainer = styled.div`
   overflow-y: auto;
 `;
 
+const NotFoundText = styled.h2`
+  font-size: 24px;
+  text-align: center;
+`;
+
 const Products = () => {
   const [filterProduct, setFilterProduct] = useState({
     brand: "all",
@@ -107,7 +112,7 @@ const Products = () => {
             {filteredProducts.length > 0 ? (
               filteredProducts
             ) : (
-              <div>No Product Found</div>
+              <NotFoundText>No Product Found</NotFoundText>
             )}
           </ProductContainer>
         </MainContentContainer>

@@ -1,17 +1,17 @@
 export const DUMMY_DATA = [
   {
-    product: "Titan SA1",
-    brand: "titan",
-    type: "analog",
-    straps: "metal",
-    gender: "male",
-    price: 1499,
-  },
-  {
-    product: "Titan Z2",
+    product: "Titan Connected X",
     brand: "titan",
     type: "analog",
     straps: "leather",
+    gender: "male",
+    price: 11995,
+  },
+  {
+    product: "Titan Urban Magic Blue",
+    brand: "titan",
+    type: "analog",
+    straps: "metal",
     gender: "male",
     price: 1199,
   },

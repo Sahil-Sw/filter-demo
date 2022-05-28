@@ -8,6 +8,11 @@ const ProductContainer = styled.div`
   padding: 7px 20px;
   margin: 18px;
   height: 50px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
 `;
 
 const ProductDetails = styled.div`
