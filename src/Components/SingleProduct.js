@@ -28,7 +28,7 @@ const SingleProduct = (props) => {
     <ProductContainer>
       <ProductDetails>{props.product.product}</ProductDetails>
       <ProductDetails>Type: {props.product.type}</ProductDetails>
-      <ProductDetails>Gender: {props.product.gender}</ProductDetails>
+      <ProductDetails>{props.product.gender}</ProductDetails>
       <ProductDetails>Straps: {props.product.straps}</ProductDetails>
       <ProductDetails>${props.product.price}</ProductDetails>
     </ProductContainer>
